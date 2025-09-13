@@ -2,7 +2,7 @@
 
 import { getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]/route";
-import { prisma } from "@/lib/prisma";
+import { prisma } from "../lib/prisma";
 import { revalidatePath } from "next/cache";
 
 export async function updateMovie(movie: string) {

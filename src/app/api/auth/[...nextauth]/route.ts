@@ -2,8 +2,8 @@ import NextAuth from "next-auth";
 import { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
-import { prisma } from "@/lib/prisma";
-import { session } from "@/lib/session";
+import { prisma } from "../../../../lib/prisma";
+import { session } from "../../../../lib/session";
 
 export const authOptions: NextAuthOptions = { 
     session: {

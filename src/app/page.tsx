@@ -1,9 +1,8 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]/route";
-import { prisma } from "@/lib/prisma";
+import { prisma } from "../lib/prisma";
 import SignOutButton from "./signoutBtn";
 import Movie from "./movie";
-import { hydrateRoot } from "react-dom/client";
 
 export default async function Home() {
     const session = await getServerSession(authOptions)
